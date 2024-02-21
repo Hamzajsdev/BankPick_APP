@@ -1,3 +1,4 @@
+
 import { StyleSheet } from "react-native";
 import theme from "../../common/Theme";
 import { fontSizes, mediumFont, regularFont } from "../../assets/fonts/font";
@@ -27,11 +28,8 @@ const styles=StyleSheet.create({
     },
     title:{
         color:theme.colors.light,
-        fontSize:fontSizes.large,
+        fontSize:fontSizes.x_medium,
         fontWeight:mediumFont.fontWeight
-    },
-    top:{
-        marginTop:30
     },
     all:{
         color:theme.colors.primary,
@@ -41,7 +39,7 @@ const styles=StyleSheet.create({
     trasition:{
         flexDirection:"row", 
         justifyContent:"space-between",     
-        marginTop:50
+        marginTop:40
     },
     entertain:{
         fontSize:fontSizes.small,

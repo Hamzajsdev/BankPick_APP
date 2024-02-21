@@ -20,7 +20,6 @@ const Setting = () => {
     const handleSubmit = () => {
         Navigation.navigate('Profile')
     }
-    
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor={theme.colors.darkBlack} barStyle="light-content" />

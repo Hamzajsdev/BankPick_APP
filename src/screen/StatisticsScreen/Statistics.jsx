@@ -6,43 +6,42 @@ import state from '../../assets/images/Statistics/state.png'
 import apple from '../../assets/images/HomeImg/apple.png'
 import download from '../../assets/images/HomeImg/download.png'
 import spotify from '../../assets/images/HomeImg/spotify.png'
-import store from '../../assets/images/HomeImg/store.png'
 import theme from '../../common/Theme'
 import styles from './stateStyle'
 import { useNavigation } from '@react-navigation/native'
 
 const Statistics = () => {
     const { width } = useWindowDimensions()
-    const Navigation=useNavigation()
-    const handlePress=()=>{
+    const Navigation = useNavigation()
+    const handlePress = () => {
         Navigation.navigate('Home')
     }
-    const handleSubmit=()=>{
+    const handleSubmit = () => {
         Navigation.navigate('Mycard')
     }
-    
+
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor={theme.colors.darkBlack} barStyle="light-content" />
             <ScrollView>
                 <View>
-                    <View>
-                        <View style={{ width: width / 1.1, marginTop:30 }}>
+                    <View style={styles.mb}>
+                        <View style={{ width: width / 1.1, marginTop: 30 }}>
                             <View style={styles.headergroup}>
                                 <TouchableOpacity onPress={handlePress}>
-                                <View style={styles.circle}>
-                                    <Image source={rightErrow} />
-                                </View>
+                                    <View style={styles.circle}>
+                                        <Image source={rightErrow} />
+                                    </View>
                                 </TouchableOpacity>
                                 <TouchableOpacity onPress={handleSubmit}>
-                                <Text style={styles.title}>Statistics</Text>
+                                    <Text style={styles.title}>Statistics</Text>
                                 </TouchableOpacity>
                                 <View style={styles.circle}>
                                     <Image source={bell} />
                                 </View>
                             </View>
                             <View style={styles.top}>
-                               <Image source={state} resizeMode='stretch' style={{width:width/1.1}}/>
+                                <Image source={state} resizeMode='stretch' style={{ width: width / 1.1 }} />
                             </View>
                             <View>
                                 <View style={styles.trasition}>
@@ -81,7 +80,7 @@ const Statistics = () => {
                                         <Text style={styles.descrip}>Money Transfer {'\n'}<Text style={styles.entertain}>Transaction</Text></Text>
                                     </View>
                                     <View>
-                                        <Text style={[styles.digit,{color:theme.colors.primary}]}>$300</Text>
+                                        <Text style={[styles.digit, { color: theme.colors.primary }]}>$300</Text>
                                     </View>
                                 </View>
                             </View>

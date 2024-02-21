@@ -1,3 +1,4 @@
+
 import { StyleSheet } from "react-native";
 import theme from "../../common/Theme";
 import { fontSizes, mediumFont, regularFont } from "../../assets/fonts/font";
@@ -7,9 +8,6 @@ const styles=StyleSheet.create({
         flex:1,
         backgroundColor:theme.colors.darkBlack,
         alignItems:"center"
-    },
-    mb:{
-        marginBottom:40
     },
     headergroup:{
         flexDirection:"row",
@@ -27,22 +25,11 @@ const styles=StyleSheet.create({
     },
     title:{
         color:theme.colors.light,
-        fontSize:fontSizes.large,
+        fontSize:fontSizes.x_medium,
         fontWeight:mediumFont.fontWeight
     },
-    top:{
-        marginTop:30
-    },
-    all:{
-        color:theme.colors.primary,
-        fontSize:fontSizes.small,
-        fontWeight:regularFont.fontWeight
-    },
-    trasition:{
-        flexDirection:"row", 
-        justifyContent:"space-between",     
-        marginTop:50
-    },
+
+
     entertain:{
         fontSize:fontSizes.small,
         color:theme.colors.gray
@@ -71,6 +58,24 @@ const styles=StyleSheet.create({
         fontSize: fontSizes.x_medium,
         fontWeight: regularFont.fontWeight
     },
+    search:{
+        height:48,
+        backgroundColor:theme.colors.lightBlack, 
+        borderRadius:10, 
+        paddingLeft:20, 
+        paddingRight:20, 
+        marginTop:20
+    },
+    innerContent:{
+        flexDirection:"row", 
+        justifyContent:"space-between", 
+        alignItems:"center"
+    },
+    headerSearch:{
+        flexDirection:"row", 
+        gap:7, 
+        alignItems:"center"
+    }
 })
 
 export default styles

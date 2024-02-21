@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
-import { fontSizes, mediumFont, regularFont } from "../../assets/fonts/font";
 import theme from "../../common/Theme";
+import { boldFont, fontSizes, mediumFont, regularFont } from "../../assets/fonts/font";
 
 const styles=StyleSheet.create({
     container:{
@@ -8,10 +8,14 @@ const styles=StyleSheet.create({
         backgroundColor:theme.colors.darkBlack,
         alignItems:"center"
     },
-    headergroup:{
-        flexDirection:"row",
-        justifyContent:"space-between",
-        alignItems:"center"
+    topheader:{
+        marginTop:30,
+        alignItems:'center'
+    },
+    backerrow:{
+        flexDirection: 'row', 
+        gap: 65,
+        alignItems: "center" 
     },
     circle:{
         width:50,
@@ -27,61 +31,71 @@ const styles=StyleSheet.create({
         fontSize:fontSizes.large,
         fontWeight:mediumFont.fontWeight
     },
-    topheader:{
+    top:{
         marginTop:30
     },
-  
-    common:{
+    text_sm:{
+        color:theme.colors.light,
+        fontSize:fontSizes.small
+    },
+    tabsHeader:{
+        backgroundColor:'rgba(0, 102, 255, 0.10)',  
+        height:120, 
+        borderRadius:10, 
+        paddingLeft:15,
+        paddingRight:15, 
+        paddingTop:10
+    },
+    tabshead:{
+        flexDirection:"row", 
+        justifyContent:'space-between',
+        marginTop:9
+    },
+    cardText:{
+        color:'#9CB1D1',
+        fontSize:fontSizes.small    
+    },
+    cardTexts:{
+        color:theme.colors.danger,
+        fontSize:fontSizes.small  
+    },
+    usd:{
+        color:'#9CB1D1',
+        fontSize:fontSizes.medium ,
+        fontWeight:boldFont.fontWeight 
+    },
+    usds:{
         color:theme.colors.light,
         fontSize:fontSizes.medium,
-        fontWeight:regularFont.fontWeight
+        fontWeight:boldFont.fontWeight 
     },
-    des:{
-        color:theme.colors.gray,
-        fontSize:fontSizes.small,
-        fontWeight:regularFont.fontWeight
+    USDHead:{
+        marginTop:20, 
+        gap:20
     },
-    profiletabs:{
-        gap: 25, 
-        marginTop: 25
+    content:{
+        flexDirection:"row", 
+        justifyContent:"space-between"
     },
-    innnercontent:{
-        flexDirection: 'row', 
-        justifyContent: 'space-between', 
-        borderBottomColor: theme.colors.gray, 
-        borderBottomWidth: .6, 
-        paddingBottom: 10 
+    nmbr:{
+        flexDirection:"row",
+        gap:20
     },
-    profileTop:{
-        marginTop:20
-    },
-    switch:{
-        flexDirection: "row", 
-        justifyContent: "space-between", 
-        alignItems: "center", 
-        marginTop: 30 
-    },
-    profilehead:{
+    btn:{
         color:theme.colors.light,
-        fontSize:fontSizes.x_medium,
+        fontSize:fontSizes.medium,
         fontWeight:mediumFont.fontWeight
     },
-    personProfile:{
-        flexDirection:'row', 
-        alignItems:'center', 
-        gap:15,
+    btnHeader:{
+        backgroundColor:theme.colors.primary, 
+        borderRadius:10, 
+        height:48, 
+        justifyContent:"center", 
+        alignItems:"center",
         marginTop:30
     },
-    notification:{
-        width:20, 
-        height:20, 
-        backgroundColor:theme.colors.danger, 
-        justifyContent:"center", 
-        alignItems:"center", 
-        borderRadius:100
-    },
 
-    // Edit Profile CSS
+    // Request Money
     subtitle:{
         color:theme.colors.gray,
         fontSize:fontSizes.small,
@@ -141,6 +155,4 @@ const styles=StyleSheet.create({
         fontWeight:regularFont.fontWeight
     }
 })
-
-
-export default styles 
+export default styles

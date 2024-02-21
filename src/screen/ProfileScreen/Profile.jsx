@@ -11,7 +11,6 @@ import notification from '../../assets/images/profile/notification.png'
 import chat from '../../assets/images/profile/chat.png'
 import location from '../../assets/images/profile/location.png'
 import setting from '../../assets/images/profile/setting.png'
-
 import { useNavigation } from '@react-navigation/native'
 import styles from './ProfileStyle'
 import { fontSizes } from '../../assets/fonts/font'
@@ -22,9 +21,9 @@ const Profile = () => {
     const handlePress = () => {
         Navigation.navigate('Setting')
     }
-    // const handleSubmit = () => {
-    //     Navigation.navigate('Profile')
-    // }
+    const handleSubmit = () => {
+        Navigation.navigate('EditProfile')
+    }
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar backgroundColor={theme.colors.darkBlack} barStyle="light-content" />
@@ -37,9 +36,9 @@ const Profile = () => {
                                     <Image source={rightErrow} />
                                 </View>
                             </TouchableOpacity>
-                            {/* <TouchableOpacity onPress={handleSubmit}> */}
+                            <TouchableOpacity onPress={handleSubmit}>
                                 <Text style={styles.title}>Profile</Text>
-                            {/* </TouchableOpacity> */}
+                            </TouchableOpacity>
                             <View style={styles.circle}>
                                 <Image source={user} />
                             </View>

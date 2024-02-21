@@ -1,8 +1,8 @@
 import { View, Text, SafeAreaView, StatusBar, useWindowDimensions, Image, TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 import rightErrow from '../../assets/icons/rightErrow.png'
-import email from '../../assets/icons/email.png'
 import lock from '../../assets/icons/lock.png'
+import email from '../../assets/icons/email.png'
 import phone from '../../assets/icons/phone.png'
 import theme from '../../common/Theme'
 import styles from './AuthStyle'
@@ -12,7 +12,7 @@ const SignUp = () => {
     const { width } = useWindowDimensions()
     const Navigation=useNavigation()
     const handlesubmit=()=>{
-        Navigation.navigate('Home')
+        Navigation.navigate('BottomTabs')
     }
     const handlePress=()=>{
         Navigation.navigate('Signin')
@@ -29,6 +29,7 @@ const SignUp = () => {
                         </View>
                         </TouchableOpacity>
                         <Text style={styles.signin}>Sign Up</Text>
+
                         <View>
                             <Text style={styles.title}>Full Name</Text>
                             <View style={styles.emailcontent}>
@@ -53,6 +54,8 @@ const SignUp = () => {
                                 <TextInput placeholder='123456' placeholderTextColor={theme.colors.gray} style={theme.colors.gray} />
                             </View>
                         </View>
+
+
                         <View>
                             <TouchableOpacity onPress={handlesubmit}>
                                 <View style={styles.btn}>

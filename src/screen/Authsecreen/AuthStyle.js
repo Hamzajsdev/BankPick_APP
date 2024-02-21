@@ -69,7 +69,75 @@ const styles=StyleSheet.create({
         color:theme.colors.gray,
         fontSize:fontSizes.small,
         marginTop:30
-    }
+    },
+
+    // Change Password
+    topheader:{
+        marginTop:30,
+        alignItems:'center'
+    },
+    backerrow:{
+        flexDirection: 'row', 
+        gap: 50,
+        alignItems: "center" 
+    },
+    circle:{
+        width:50,
+        height:50,
+        backgroundColor:theme.colors.lightBlack,
+        borderRadius:100,
+        display:'flex',
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    Subtitle:{
+        color:theme.colors.light,
+        fontSize:fontSizes.large,
+        fontWeight:mediumFont.fontWeight
+    },
+    subtitle:{
+        color:theme.colors.gray,
+        fontSize:fontSizes.small,
+        marginTop:50
+    },
+    emailcontent:{
+        flexDirection:'row', 
+        gap:10, 
+        alignItems:"center", 
+        borderBottomColor:theme.colors.lightBlack, 
+        borderBottomWidth:1.5,
+        marginTop:8
+        
+    },
+    passwordtitle:{
+        color:theme.colors.gray,
+        fontSize:fontSizes.small,
+        marginTop:20
+    },
+    Emailtitle:{
+        color:theme.colors.gray,
+        fontSize:fontSizes.small,
+        marginTop:20
+    },
+    matchPassword:{
+        color:theme.colors.gray,
+        fontSize:fontSizes.x_small,
+        marginTop:5
+    },
+    btnHeader:{
+        backgroundColor:theme.colors.primary, 
+        borderRadius:10, 
+        height:48, 
+        justifyContent:"center", 
+        alignItems:"center",
+        marginTop:30
+    },
+    btn1:{
+        color:theme.colors.light,
+        fontSize:fontSizes.medium,
+        fontWeight:mediumFont.fontWeight
+    },
+
 })
 
 export default styles
