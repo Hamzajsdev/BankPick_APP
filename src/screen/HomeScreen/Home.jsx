@@ -125,6 +125,7 @@ const Home = () => {
                                         <Text style={styles.digit}>- $ 88</Text>
                                     </View>
                                 </View>
+                                
                             </View>
                         </View>
                     </View>

@@ -38,7 +38,7 @@ const BottomTabs = () => {
                     return (
                         <View >
                             <View>
-                                <Image source={iconImage} style={{tintColor, }} />
+                                <Image source={iconImage} style={{tintColor}} />
                             </View>
                             <View style={[containerStyle]}>
                                 <Image source={ticketImg}  />
